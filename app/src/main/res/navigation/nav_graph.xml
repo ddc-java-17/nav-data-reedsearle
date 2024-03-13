@@ -9,6 +9,7 @@
   <fragment
     android:id="@+id/main_fragment"
     android:name="com.example.navdemo.MainFragment"
+    android:label="@string/main_fragment_label"
     tools:layout="@layout/fragment_main"
     >
     <action
@@ -19,6 +20,7 @@
         app:argType="string"
         />
     </action>
+
     <action
       android:id="@+id/navigate_to_c"
       app:destination="@id/child_c_fragment"/>
@@ -30,8 +32,14 @@
   <fragment
     android:id="@+id/child_b_fragment"
     android:name="com.example.navdemo.ChildBFragment"
-    tools:layout="@layout/fragment_child_b"
-    >
+    android:label="@string/fragment_b_label"
+    tools:layout="@layout/fragment_child_b">
+
+    <argument
+      android:name="content"
+      app:argType="string"
+      />
+
     <action
       android:id="@+id/navigate_to_c"
       app:destination="@id/child_c_fragment"/>
@@ -40,12 +48,14 @@
   <fragment
     android:id="@+id/child_c_fragment"
     android:name="com.example.navdemo.ChildCFragment"
+    android:label="@string/fragment_c_label"
     tools:layout="@layout/fragment_child_c"
     />
 
   <fragment
     android:id="@+id/child_d_fragment"
     android:name="com.example.navdemo.ChildDFragment"
+    android:label="@string/fragment_d_label"
     tools:layout="@layout/fragment_child_d"
     >
     <action
