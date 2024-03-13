@@ -59,8 +59,8 @@
     tools:layout="@layout/fragment_child_d"
     >
     <action
-      android:id="@+id/navigate_to_b"
-      app:destination="@id/child_b_fragment"/>
+      android:id="@+id/navigate_to_c"
+      app:destination="@id/child_c_fragment"/>
   </fragment>
 
 </navigation>

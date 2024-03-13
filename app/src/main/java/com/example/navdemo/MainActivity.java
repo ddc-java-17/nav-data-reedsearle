@@ -22,4 +22,11 @@ public class MainActivity extends AppCompatActivity {
     NavigationUI
         .setupActionBarWithNavController(this, navController, appBarConfig);
   }
+
+
+  @Override
+  public boolean onSupportNavigateUp() {
+    getOnBackPressedDispatcher().onBackPressed();
+    return true;
+  }
 }
