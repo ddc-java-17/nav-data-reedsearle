@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
+import com.example.navdemo.NavGraphDirections;
 import com.example.navdemo.databinding.FragmentChildCBinding;
 import com.example.navdemo.viewmodel.CommonViewModel;
 
@@ -31,6 +33,8 @@ public class ChildCFragment extends Fragment {
     super.onViewCreated(view, savedInstanceState);
     binding.content.setSaveEnabled(false);
     binding.content.addTextChangedListener(new ContentWatcher());
+    binding.openDialog.setOnClickListener((button)->
+        Navigation.findNavController(button).navigate(NavGraphDirections.openDialog()));
     viewModel = new ViewModelProvider(requireActivity()).get(CommonViewModel.class);
     viewModel
         .getSharedContent()

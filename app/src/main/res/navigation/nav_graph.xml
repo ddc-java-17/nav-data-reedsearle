@@ -6,6 +6,11 @@
   android:id="@+id/nav_graph"
   app:startDestination="@id/main_fragment">
 
+  <action
+    android:id="@+id/open_dialog"
+    app:destination="@+id/simple_dialog_fragment"
+    />
+
   <fragment
     android:id="@+id/main_fragment"
     android:name="com.example.navdemo.controller.MainFragment"
@@ -62,5 +67,10 @@
       android:id="@+id/navigate_to_c"
       app:destination="@id/child_c_fragment"/>
   </fragment>
+
+  <dialog
+    android:id="@+id/simple_dialog_fragment"
+    android:name="com.example.navdemo.controller.SimpleDialogFragment"
+    />
 
 </navigation>
