@@ -1,4 +1,4 @@
-package com.example.navdemo;
+package com.example.navdemo.controller;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

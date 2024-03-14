@@ -1,4 +1,4 @@
-package com.example.navdemo;
+package com.example.navdemo.controller;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.example.navdemo.databinding.FragmentChildCBinding;
+import com.example.navdemo.viewmodel.CommonViewModel;
 
 public class ChildCFragment extends Fragment {
 

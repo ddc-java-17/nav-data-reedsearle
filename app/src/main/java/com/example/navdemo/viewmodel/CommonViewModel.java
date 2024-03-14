@@ -1,4 +1,4 @@
-package com.example.navdemo;
+package com.example.navdemo.viewmodel;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
